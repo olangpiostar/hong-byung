@@ -2,7 +2,8 @@
 this repository is for meeting Log
 
 # 8.FEB.2021
-#import
+
+# import
 import numpy as np
 import pandas as pd
 
