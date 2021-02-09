@@ -6,22 +6,22 @@ this repository is for meeting Log
 import numpy as np
 import pandas as pd
 
-#file reading
+# file reading
 data = pd.read_csv('./data/train.csv')
 
-#Mr, Mrs, Miss & etc name sorting
+# Mr, Mrs, Miss & etc name sorting
 list_name = data.Name
 test1 = list(map(lambda x:x.split('.')[0],list(data['Name'])))
 test2 = list(map(lambda x:x.split(' ')[-1],test1))
 
-#count name as dict type
+# count name as dict type
 count = {}
 for i in test2:
     try: count[i] +=1
     except: count[i] = 1
 print(count)
 
-#Dataframe describing
+# Dataframe describing
 data['Name_2']=test2
 data.groupby('Name_2').describe()
 ----------------------------------------------------------------------------------
