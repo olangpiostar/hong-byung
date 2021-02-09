@@ -43,3 +43,7 @@ df_train.isna().sum()
 age = data['Age'].dropna()
 subage = list(map(lambda x:(x-x//1)>0,age))
 subage.count(True)
+
+# Task
+1. think abt ticket data
+2. study abt classifying
